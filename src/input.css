@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    p,h1,h2,h3,h4,h5,h6,
+    a {
+        font-family: 'Montserrat', sans-serif;
+    }
+    .nav-li {
+        @apply flex items-center justify-center w-[90px] h-10 rounded-md hover:bg-yellow-400;
+    }
+    .benefit {
+        @apply bg-white w-full h-[58px] xl:h-[85px] 2xl:h-[120px] px-5 md:px-3 lg:p-[22px] flex items-center hover:shadow-2xl duration-500;
+    }
+    .benefit__iconBg {
+        @apply relative w-[42px] lg:w-12 xl:w-[62px] 2xl:w-[77px] h-[42px] lg:h-12 xl:h-[62px] 2xl:h-[77px] bg-black-200 rounded-md flex items-center justify-center;
+    }
+    .benefit__title {
+        @apply md:text-sm lg:text-base xl:text-xl 2xl:text-2xl font-medium;
+    }
+    .benefit__desc {
+        @apply md:text-[9px] lg:text-xs xl:text-sm 2xl:text-base font-medium  text-gray-400 ;
+    }
+    .shadow-yellow {
+        background: #FDB819;
+        box-shadow: 0px 0px 15px #FDB819;
+    }
+    .shadow-yellow:hover {
+        background: #FDB819;
+        box-shadow: 0px 0px 15px #FEBF2D;
+    }
+    .popularCatalogBtn {
+     @apply border-b-2 border-white hover:border-gray-500 py-2 text-gray-400 hover:text-gray-500;
+    }
+    .popularCatalogBtn-active {
+     @apply border-b-2 border-yellow-400 py-2;
+    }
+    .scrollbar-hidden::-webkit-scrollbar {
+        display: none;
+    }
+    .cart {
+        @apply relative z-0 hover:z-10 w-[240px] 2xl:w-[260px] h-[430px] 2xl:h-[446px] bg-white hover:shadow-2xl duration-300 transform hover:-translate-y-1;
+    }
+    .cart__img {
+        @apply w-[260px] h-[223px] flex items-center justify-center;
+    }
+    .cart__category {
+        @apply text-[10px] font-semibold text-gray-400;
+    }
+    .cart__name {
+        @apply text-2xl font-bold;
+    }
+    .cart__desc {
+        @apply text-xs leading-4;
+    }
+    .cart__interact {
+        @apply absolute bottom-6 left-0 w-full flex justify-between items-end px-4;
+    }
+    .cart__oldPrice {
+        @apply text-gray-400 font-bold text-sm;
+    }
+    .cart__price {
+        @apply text-xl font-bold -mt-1;
+    }
+    .cart__btn {
+        @apply w-[130px] h-[30px] bg-yellow-400 hover:bg-yellow-300;
+    }
+}
