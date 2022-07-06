@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapchasti.group</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body class="overflow-hidden">
+
+    
+    <!-- Basket -->
+    <div class="z-40 absolute top-0 left-0 w-full h-screen bg-white bg-opacity-50 ">
+        <div class="w-full h-full flex items-center justify-center">
+            <div class="w-[340px] md:w-[724px] lg:w-[924px] xl:w-[1124px] 2xl:w-[1280px] bg-white pt-8 pb-14 px-[30px] shadow-2xl">
+
+                <div class="flex items-center justify-between border-b-2 border-gray-200 pb-6">
+                    <h2 class="text-4xl font-semibold">Корзина</h2>
+                    <button class="p-2 bg-white rounded-md hover:shadow-xl text-gray-400 hover:text-red-500 duration-200 active:shadow-none active:scale-95">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M29.3167 8.33337L20 17.65L10.6833 8.33337L8.33334 10.6834L17.65 20L8.33334 29.3167L10.6833 31.6667L20 22.35L29.3167 31.6667L31.6667 29.3167L22.35 20L31.6667 10.6834L29.3167 8.33337Z" fill="currentColor  "/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="my-6 min-h-[100px] max-h-[400px] overflow-y-auto p-4">
+
+                    <!-- Product -->
+                    <div class="basket__product">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <img src="./img/tire.png" alt="basket img product" class="basket__product__img">
+                            <div class="ml-5">
+                                <a href="#" class="basket__product__name ">Michelin Pilot Alpin</a>
+                                <div class="basket__product__desc">
+                                    <h3 class="text-gray-400">Постачальник: <a href="#" class="text-black-900 font-medium hover:underline">Zapchasti.group</a></h3>
+                                    <h3 class=" text-gray-400">Артикул: <span class="text-black-900 font-medium">645164846</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="" class="basket__product__form">
+                            <div class="flex items-center space-x-2">
+                                <button class="basket__product__btn1" onclick="desc()">-</button>
+                                <input type="text" placeholder="1" class="basket__product__count" id="count">
+                                <button class="basket__product__btn1" onclick="add()">+</button>
+                            </div>
+                            <p class="basket__product__price">195.3 грн</p>
+                            <button class="basket__product__btn1 flex items-center justify-center text-gray-400 hover:text-red-500 hover:bg-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M7.99999 25.3333C7.99999 26.8 9.19999 28 10.6667 28H21.3333C22.8 28 24 26.8 24 25.3333V9.33333H7.99999V25.3333ZM11.28 15.84L13.16 13.96L16 16.7867L18.8267 13.96L20.7067 15.84L17.88 18.6667L20.7067 21.4933L18.8267 23.3733L16 20.5467L13.1733 23.3733L11.2933 21.4933L14.12 18.6667L11.28 15.84ZM20.6667 5.33333L19.3333 4H12.6667L11.3333 5.33333H6.66666V8H25.3333V5.33333H20.6667Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+
+
+
+                </div>
+
+                <div class="flex flex-col-reverse lg:flex-row items-center justify-between">
+                    <button class="mt-4 px-6 py-2 font-semibold border-2 border-blue-500 bg-blue-200 text-blue-500 hover:bg-blue-500 hover:text-white duration-100 shadow-lg  hover:shadow-blue-400 active:shadow-none active:scale-95">Продовжити покупки</button>
+                    
+                    <div class="md:w-[500px] md:h-[100px] bg-yellow-400 bg-opacity-40 border-[3px] border-yellow-400 flex flex-col md:flex-row items-center justify-between px-4 md:px-6 py-4 md:py-0 space-y-2">
+                        <p class="text-3xl font-semibold">586 грн</p>
+                        <button class="px-10 py-4 font-semibold bg-yellow-400 hover:text-white   duration-100  active:shadow-none active:scale-95">Оформити замовлення</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="bg-white">
+        <div class="container mx-auto px-6">
+            <div class="h-[100px] flex items-center justify-between">
+
+                <a href="#" class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="21" viewBox="0 0 34 21" fill="none">
+                        <rect width="34" height="3" rx="1" fill="black" />
+                        <rect y="9" width="28" height="3" rx="1" fill="black" />
+                        <rect y="18" width="34" height="3" rx="1" fill="black" />
+                    </svg>
+                </a>
+
+                <!-- Logo -->
+                <a href="#" class="flex items-center lg:text-base xl:text-xl 2xl:text-2xl font-bold">
+                    <img src="./img/Logo.png" alt=""
+                        class="w-[89px] lg:w-[69px] xl:w-[79px] 2xl:w-[89px] h-[45px] lg:h-[35px] xl:h-[40p] 2xl:h-[45px] mr-4">
+                    <p class="hidden lg:block">Zapchasti.group</p>
+                </a>
+
+                <!-- Menu -->
+                <nav class="hidden lg:block">
+                    <ul class="lg:text-sm xl:text-base font-medium flex items-center xl:space-x-5 2xl:space-x-10">
+                        <li class="nav-li"><a href="#">Головна</a></li>
+                        <li class="nav-li bg-yellow-400"><a href="#">Каталог</a></li>
+                        <li class="nav-li"><a href="#">Блог</a></li>
+                        <li class="nav-li"><a href="#">Контакти</a></li>
+                        <li class="nav-li"><a href="#">Про нас</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Favorite / Basket -->
+                <div class="flex items-center space-x-[27px]">
+                    <!-- Heart svg -->
+                    <!-- <a href="#" class="relative">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_133_2145)">
+                            <path d="M12.5 4.29383L11.3796 3.14226C8.74996 0.439138 3.92808 1.37195 2.18746 4.77039C1.37027 6.36883 1.1859 8.67664 2.67808 11.622C4.11558 14.4579 7.10621 17.8548 12.5 21.5548C17.8937 17.8548 20.8828 14.4579 22.3218 11.622C23.814 8.67508 23.6312 6.36883 22.8125 4.77039C21.0718 1.37195 16.25 0.437576 13.6203 3.1407L12.5 4.29383ZM12.5 23.4376C-11.4579 7.60633 5.1234 -4.74992 12.225 1.78601C12.3187 1.87195 12.4109 1.96101 12.5 2.0532C12.5881 1.9611 12.6799 1.87249 12.775 1.78758C19.875 -4.75305 36.4578 7.60476 12.5 23.4376Z" fill="#212121"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_133_2145">
+                            <rect width="25" height="25" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>                            
+                    </a> -->
+
+                    <!-- Shoping cart -->
+                    <!-- <a href="#" class="relative">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.1083 26.6666C12.1438 26.6666 12.9833 25.8272 12.9833 24.7916C12.9833 23.7561 12.1438 22.9166 11.1083 22.9166C10.0727 22.9166 9.23328 23.7561 9.23328 24.7916C9.23328 25.8272 10.0727 26.6666 11.1083 26.6666Z" fill="#212121"/>
+                            <path d="M22.5 26.6666C23.5355 26.6666 24.375 25.8272 24.375 24.7916C24.375 23.7561 23.5355 22.9166 22.5 22.9166C21.4645 22.9166 20.625 23.7561 20.625 24.7916C20.625 25.8272 21.4645 26.6666 22.5 26.6666Z" fill="#212121"/>
+                            <path d="M27.5667 4.47495C27.4892 4.37935 27.3914 4.30213 27.2804 4.24881C27.1695 4.1955 27.0481 4.16743 26.925 4.16662H9.57503L10.1167 5.83328H25.8334L23.6084 15.8333H11.1084L7.30003 3.77495C7.25884 3.647 7.1873 3.53091 7.09153 3.43659C6.99576 3.34227 6.8786 3.27252 6.75003 3.23328L3.33336 2.18328C3.22831 2.151 3.11792 2.13972 3.0085 2.1501C2.89909 2.16048 2.79279 2.19231 2.69568 2.24377C2.49954 2.34769 2.35273 2.52528 2.28753 2.73745C2.22233 2.94962 2.24409 3.17901 2.34802 3.37514C2.45194 3.57127 2.62952 3.71808 2.8417 3.78328L5.83336 4.69995L9.65836 16.7833L8.2917 17.8999L8.18336 18.0083C7.84531 18.3979 7.6537 18.8931 7.64153 19.4088C7.62936 19.9244 7.7974 20.4282 8.1167 20.8333C8.34383 21.1095 8.63245 21.3287 8.95948 21.4734C9.28651 21.6181 9.64286 21.6843 10 21.6666H23.9084C24.1294 21.6666 24.3413 21.5788 24.4976 21.4225C24.6539 21.2663 24.7417 21.0543 24.7417 20.8333C24.7417 20.6123 24.6539 20.4003 24.4976 20.244C24.3413 20.0877 24.1294 19.9999 23.9084 19.9999H9.8667C9.77074 19.9967 9.67724 19.9687 9.59525 19.9187C9.51325 19.8688 9.44552 19.7985 9.39861 19.7147C9.3517 19.631 9.32718 19.5365 9.32743 19.4405C9.32768 19.3445 9.35268 19.2501 9.40003 19.1666L11.4084 17.4999H24.275C24.4677 17.5047 24.656 17.4425 24.8079 17.3239C24.9599 17.2054 25.066 17.0379 25.1084 16.8499L27.75 5.18328C27.7754 5.05905 27.772 4.93067 27.7403 4.80792C27.7085 4.68517 27.6491 4.57129 27.5667 4.47495Z" fill="#212121"/>
+                        </svg>
+                    </a> -->
+
+                    <a href="#"
+                        class="realtive text-black-900 hover:text-yellow-400 flex items-center lg:text-sm 2xl:text-base">
+                        <!-- User svg -->
+                        <svg class="w-10 lg:w-8 h-10 lg:h-8 mr-2" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C6.579 2 2 6.579 2 12C2 17.421 6.579 22 12 22C17.421 22 22 17.421 22 12C22 6.579 17.421 2 12 2ZM12 7C13.727 7 15 8.272 15 10C15 11.728 13.727 13 12 13C10.274 13 9 11.728 9 10C9 8.272 10.274 7 12 7ZM6.894 16.772C7.791 15.452 9.287 14.572 11 14.572H13C14.714 14.572 16.209 15.452 17.106 16.772C15.828 18.14 14.015 19 12 19C9.985 19 8.172 18.14 6.894 16.772Z"
+                                fill="currentColor" />
+                        </svg>
+                        <p class="hidden lg:block">Вхід / Реєстрація</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-full h-[60px] bg-yellow-400">
+            <div class="container mx-auto px-6">
+                <div class="flex items-center justify-between">
+
+                    <!-- Catalog btn -->
+                    <a href="#"
+                        class="md:w-[180px] lg:w-[360px] h-[60px] bg-black-200 px-6 hidden md:flex items-center justify-between text-white font-medium md:text-xs lg:text-sm xl:text-base">
+                        <div class="flex items-center">
+                            <svg class="mb-px mr-2" width="17" height="12" viewBox="0 0 17 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="17" height="2" fill="currentColor" />
+                                <rect y="5" width="17" height="2" fill="currentColor" />
+                                <rect y="10" width="17" height="2" fill="currentColor" />
+                            </svg>
+                            КАТАЛОГ ЗАПЧАСТИН
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 16C11.7664 16.0005 11.5399 15.9191 11.36 15.77L5.36003 10.77C5.15581 10.6003 5.02739 10.3564 5.00301 10.092C4.97863 9.82753 5.06029 9.56425 5.23003 9.36003C5.39977 9.15581 5.64368 9.02739 5.90811 9.00301C6.17253 8.97863 6.43581 9.06029 6.64003 9.23003L12 13.71L17.36 9.39003C17.4623 9.30697 17.58 9.24493 17.7064 9.2075C17.8327 9.17007 17.9652 9.15798 18.0962 9.17192C18.2272 9.18586 18.3542 9.22555 18.4699 9.28873C18.5855 9.3519 18.6875 9.4373 18.77 9.54003C18.8616 9.64285 18.931 9.76348 18.9738 9.89435C19.0166 10.0252 19.0319 10.1635 19.0187 10.3006C19.0056 10.4377 18.9643 10.5705 18.8974 10.6909C18.8305 10.8112 18.7395 10.9165 18.63 11L12.63 15.83C12.4449 15.9555 12.2231 16.0154 12 16Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+
+                    <form action="" class="w-full md:w-auto h-[60px] flex items-center justify-center">
+                        <div class="">
+                            <!-- Search -->
+                            <input type="text" class="w-[190px] md:w-[360px] h-10 px-5 outline-none rounded-l-md"
+                                placeholder="Пошук по назві, VIN ...">
+                            <button
+                                class="w-[120px] h-10 bg-black-200 text-white rounded-r-md -ml-1 hover:bg-black-300">Пошук</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mx-auto px-6">
+            <img src="./img/banner.png" alt="" class="w-full h-[150px] md:h-[173px] lg:h-[233px] xl:h-[256px] 2xl:h-96">
+        </div>
+    </header>
+
+    <!-- Benefits -->
+    <section class="bg-gray-100 pt-5 lg:pt-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-1 xl:space-x-[10px] 2xl:space-x-10">
+
+                <!-- One benefit -->
+                <div class="benefit">
+                    <div class="benefit__iconBg">
+                        <img src="./img/benefits__blur.png" alt="" class="absolute z-0">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-[27px] lg:w-8 xl:w-10 h-[27px] lg:h-8 xl:h-10 z-10" viewBox="0 0 41 40"
+                            fill="none">
+                            <path
+                                d="M1.55566 12.5H18.0636L19.3334 15H2.82551L1.55566 12.5ZM3.24879 17.5H19.7567L21.0266 20H4.51863L3.24879 17.5ZM30.762 30.8334C32.1673 30.8334 33.3017 29.7167 33.3017 28.3334C33.3017 26.95 32.1673 25.8334 30.762 25.8334C29.3567 25.8334 28.2223 26.95 28.2223 28.3334C28.2223 29.7167 29.3567 30.8334 30.762 30.8334ZM33.3017 15.8334H29.0689V20H36.6202L33.3017 15.8334ZM13.8308 30.8334C15.2361 30.8334 16.3705 29.7167 16.3705 28.3334C16.3705 26.95 15.2361 25.8334 13.8308 25.8334C12.4255 25.8334 11.2911 26.95 11.2911 28.3334C11.2911 29.7167 12.4255 30.8334 13.8308 30.8334ZM34.1483 13.3334L39.2276 20V28.3334H35.8414C35.8414 31.1 33.5726 33.3334 30.762 33.3334C27.9514 33.3334 25.6826 31.1 25.6826 28.3334H18.9102C18.9102 31.1 16.6244 33.3334 13.8308 33.3334C11.0202 33.3334 8.75143 31.1 8.75143 28.3334H5.36519V22.5H8.75143V25H10.0382C10.9694 23.9834 12.3239 23.3334 13.8308 23.3334C15.3377 23.3334 16.6922 23.9834 17.6234 25H25.6826V10H5.36519C5.36519 8.15002 6.87207 6.66669 8.75143 6.66669H29.0689V13.3334H34.1483Z"
+                                fill="#FDB819" />
+                        </svg>
+                    </div>
+                    <div class="ml-4 md:ml-2 lg:ml-3 xl:ml-4 2xl:ml-11">
+                        <p class="benefit__title">Відправка</p>
+                        <p class="benefit__desc">в день замовленя</p>
+                    </div>
+                </div>
+
+                <!-- One benefit -->
+                <div class="benefit">
+                    <div class="benefit__iconBg">
+                        <img src="./img/benefits__blur.png" alt="" class="absolute z-0">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-[27px] lg:w-8 xl:w-10 h-[27px] lg:h-8 xl:h-10 z-10" viewBox="0 0 41 40"
+                            fill="none">
+                            <path
+                                d="M1.55566 12.5H18.0636L19.3334 15H2.82551L1.55566 12.5ZM3.24879 17.5H19.7567L21.0266 20H4.51863L3.24879 17.5ZM30.762 30.8334C32.1673 30.8334 33.3017 29.7167 33.3017 28.3334C33.3017 26.95 32.1673 25.8334 30.762 25.8334C29.3567 25.8334 28.2223 26.95 28.2223 28.3334C28.2223 29.7167 29.3567 30.8334 30.762 30.8334ZM33.3017 15.8334H29.0689V20H36.6202L33.3017 15.8334ZM13.8308 30.8334C15.2361 30.8334 16.3705 29.7167 16.3705 28.3334C16.3705 26.95 15.2361 25.8334 13.8308 25.8334C12.4255 25.8334 11.2911 26.95 11.2911 28.3334C11.2911 29.7167 12.4255 30.8334 13.8308 30.8334ZM34.1483 13.3334L39.2276 20V28.3334H35.8414C35.8414 31.1 33.5726 33.3334 30.762 33.3334C27.9514 33.3334 25.6826 31.1 25.6826 28.3334H18.9102C18.9102 31.1 16.6244 33.3334 13.8308 33.3334C11.0202 33.3334 8.75143 31.1 8.75143 28.3334H5.36519V22.5H8.75143V25H10.0382C10.9694 23.9834 12.3239 23.3334 13.8308 23.3334C15.3377 23.3334 16.6922 23.9834 17.6234 25H25.6826V10H5.36519C5.36519 8.15002 6.87207 6.66669 8.75143 6.66669H29.0689V13.3334H34.1483Z"
+                                fill="#FDB819" />
+                        </svg>
+                    </div>
+                    <div class="ml-4 md:ml-2 lg:ml-3 xl:ml-4 2xl:ml-11">
+                        <p class="benefit__title">Відправка</p>
+                        <p class="benefit__desc">в день замовленя</p>
+                    </div>
+                </div>
+
+                <!-- One benefit -->
+                <div class="benefit">
+                    <div class="benefit__iconBg">
+                        <img src="./img/benefits__blur.png" alt="" class="absolute z-0">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-[27px] lg:w-8 xl:w-10 h-[27px] lg:h-8 xl:h-10 z-10" viewBox="0 0 41 40"
+                            fill="none">
+                            <path
+                                d="M1.55566 12.5H18.0636L19.3334 15H2.82551L1.55566 12.5ZM3.24879 17.5H19.7567L21.0266 20H4.51863L3.24879 17.5ZM30.762 30.8334C32.1673 30.8334 33.3017 29.7167 33.3017 28.3334C33.3017 26.95 32.1673 25.8334 30.762 25.8334C29.3567 25.8334 28.2223 26.95 28.2223 28.3334C28.2223 29.7167 29.3567 30.8334 30.762 30.8334ZM33.3017 15.8334H29.0689V20H36.6202L33.3017 15.8334ZM13.8308 30.8334C15.2361 30.8334 16.3705 29.7167 16.3705 28.3334C16.3705 26.95 15.2361 25.8334 13.8308 25.8334C12.4255 25.8334 11.2911 26.95 11.2911 28.3334C11.2911 29.7167 12.4255 30.8334 13.8308 30.8334ZM34.1483 13.3334L39.2276 20V28.3334H35.8414C35.8414 31.1 33.5726 33.3334 30.762 33.3334C27.9514 33.3334 25.6826 31.1 25.6826 28.3334H18.9102C18.9102 31.1 16.6244 33.3334 13.8308 33.3334C11.0202 33.3334 8.75143 31.1 8.75143 28.3334H5.36519V22.5H8.75143V25H10.0382C10.9694 23.9834 12.3239 23.3334 13.8308 23.3334C15.3377 23.3334 16.6922 23.9834 17.6234 25H25.6826V10H5.36519C5.36519 8.15002 6.87207 6.66669 8.75143 6.66669H29.0689V13.3334H34.1483Z"
+                                fill="#FDB819" />
+                        </svg>
+                    </div>
+                    <div class="ml-4 md:ml-2 lg:ml-3 xl:ml-4 2xl:ml-11">
+                        <p class="benefit__title">Відправка</p>
+                        <p class="benefit__desc">в день замовленя</p>
+                    </div>
+                </div>
+
+                <!-- One benefit -->
+                <div class="benefit">
+                    <div class="benefit__iconBg">
+                        <img src="./img/benefits__blur.png" alt="" class="absolute z-0">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-[27px] lg:w-8 xl:w-10 h-[27px] lg:h-8 xl:h-10 z-10" viewBox="0 0 41 40"
+                            fill="none">
+                            <path
+                                d="M1.55566 12.5H18.0636L19.3334 15H2.82551L1.55566 12.5ZM3.24879 17.5H19.7567L21.0266 20H4.51863L3.24879 17.5ZM30.762 30.8334C32.1673 30.8334 33.3017 29.7167 33.3017 28.3334C33.3017 26.95 32.1673 25.8334 30.762 25.8334C29.3567 25.8334 28.2223 26.95 28.2223 28.3334C28.2223 29.7167 29.3567 30.8334 30.762 30.8334ZM33.3017 15.8334H29.0689V20H36.6202L33.3017 15.8334ZM13.8308 30.8334C15.2361 30.8334 16.3705 29.7167 16.3705 28.3334C16.3705 26.95 15.2361 25.8334 13.8308 25.8334C12.4255 25.8334 11.2911 26.95 11.2911 28.3334C11.2911 29.7167 12.4255 30.8334 13.8308 30.8334ZM34.1483 13.3334L39.2276 20V28.3334H35.8414C35.8414 31.1 33.5726 33.3334 30.762 33.3334C27.9514 33.3334 25.6826 31.1 25.6826 28.3334H18.9102C18.9102 31.1 16.6244 33.3334 13.8308 33.3334C11.0202 33.3334 8.75143 31.1 8.75143 28.3334H5.36519V22.5H8.75143V25H10.0382C10.9694 23.9834 12.3239 23.3334 13.8308 23.3334C15.3377 23.3334 16.6922 23.9834 17.6234 25H25.6826V10H5.36519C5.36519 8.15002 6.87207 6.66669 8.75143 6.66669H29.0689V13.3334H34.1483Z"
+                                fill="#FDB819" />
+                        </svg>
+                    </div>
+                    <div class="ml-4 md:ml-2 lg:ml-3 xl:ml-4 2xl:ml-11">
+                        <p class="benefit__title">Відправка</p>
+                        <p class="benefit__desc">в день замовленя</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular product -->
+    <section class="bg-gray-100 pt-5 lg:pt-10">
+        <div class="container px-6 mx-auto">
+
+            <div class="w-full lg:h-[600px] bg-white flex flex-col lg:flex-row">
+
+                <!-- Popular product img -->
+                <div class="relative w-full lg:w-[292px] h-[200px] lg:h-full">
+                    <img src="./img/popular_img_banner.png" alt="" class="absolute z-0 w-full h-full">
+                    <div class="flex flex-col justify-between relative z-10 h-full p-[25px]">
+                        <p class="text-white text-4xl xl:text-2xl 2xl:text-4xl font-bold">Популярні товари</p>
+                        <button
+                            class="w-[136px] h-[35px] bg-yellow-400 shadow-yellow hover:bg-yellow-300 text-sm">Детальніше</button>
+                    </div>
+                </div>
+
+                <!-- Popular catalog -->
+                <div class="">
+                    <div class="h-[75px] mx-[27px] px-[13px] border-b border-gray-200">
+                        <div class="h-full flex items-center justify-between overflow-x-scroll md:overflow-auto">
+
+                            <ul class="flex items-center space-x-10 text-sm font-semibold">
+                                <li class="popularCatalogBtn-active"><a href="#" class="">НОВІ <span class="hidden md:inline"> НАДХОДЖЕННЯ</span></a></li>
+                                <li class="popularCatalogBtn"><a href="#" class="">КРАЩІ</a></li>
+                                <li class="popularCatalogBtn"><a href="#" class="">ПОПУЛЯРНІ</a></li>
+                            </ul>
+
+                            <div class="hidden md:flex items-center space-x-4">
+                                <!-- Go left -->
+                                <a href=""
+                                    class="flex items-center justify-center w-10 h-10 bg-white hover:shadow-xl duration-500 rounded-md text-gray-500 hover:text-yellow-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20"
+                                        fill="none">
+                                        <path
+                                            d="M0.959379 9.98761L11 18.5378V20L0 10.6072V9.36803L11 0V1.43742L0.959379 9.98761Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </a>
+                                <div class="w-px h-[30px] bg-gray-400"></div>
+                                <!-- Go right -->
+                                <a href=""
+                                    class="flex items-center justify-center w-10 h-10 bg-white hover:shadow-xl duration-500 duration rounded-md text-gray-500 hover:text-yellow-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20"
+                                        fill="none">
+                                        <path
+                                            d="M10.0406 9.98761L-2.17115e-07 18.5378V20L11 10.6072V9.36803L-2.17115e-07 0V1.43742L10.0406 9.98761Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Carts -->
+                    <div
+                        class="mt-[34px] ml-11 pb-10 flex lg:w-[650px] xl:w-[1000px] 2xl:w-[1181px] overflow-x-scroll scrollbar-hidden">
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів за допомогою склоомиваючого пристрою.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button href="./product.html" class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів за допомогою склоомиваючого пристрою.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів за допомогою склоомиваючого пристрою.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів за допомогою склоомиваючого пристрою.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів за допомогою склоомиваючого пристрою.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів за допомогою склоомиваючого пристрою.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Popular categories -->
+    <section class="bg-gray-100 pt-10">
+        <div class="container mx-auto px-6">
+
+            <h2 class="text-4xl xl:text-4xl font-bold">Популярі категорії</h2>
+
+
+            <div
+                class="flex flex-col lg:flex-row items-center justify-between mt-5 space-y-5 space-x-0 lg:space-y-0 lg:space-x-6 xl:space-x-[30px] 2xl:space-x-[60px]">
+
+                <!-- One category -->
+                <div class="relative bg-white w-full h-[226px] xl:h-[278px] overflow-hidden">
+
+                    <img src="./img/yellow-circle.png" alt="yellow circle" class="absolute z-0 h-full -left-14">
+
+                    <div class="relative z-10 w-full h-full flex items-center">
+                        <img src="./img/tires.png" alt="tires" class="w-[130px] h-auto xl:w-[194px] ml-3">
+                        <div class="ml-8 xl:ml-[70px]">
+                            <h3 class="text-xl xl:text-2xl font-bold">Шини</h3>
+                            <ul class="mt-1">
+                                <li class=""><a href=""
+                                        class="hover:font-semibold hover:text-yellow-400 duration-200 ">Літні</a></li>
+                                <li class=""><a href=""
+                                        class="hover:font-semibold hover:text-yellow-400 duration-200 ">Зимові</a></li>
+                                <li class=""><a href=""
+                                        class="hover:font-semibold hover:text-yellow-400 duration-200 ">Шиповані</a>
+                                </li>
+                                <li class=""><a href=""
+                                        class="hover:font-semibold hover:text-yellow-400 duration-200 ">Гладкі</a></li>
+                                <li class=""><a href=""
+                                        class="hover:font-bold hover:text-yellow-400 duration-200 text-sm font-semibold text-yellow-400">до
+                                        категорії</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- One category -->
+                <div class="relative bg-white w-full h-[226px] xl:h-[278px] overflow-hidden">
+
+                    <img src="./img/green-circle.png" alt="yellow circle" class="absolute z-0 h-full -left-14">
+
+                    <div class="relative z-10 w-full h-full flex items-center">
+                        <img src="./img/tires.png" alt="tires" class="w-[130px] h-auto xl:w-[194px] ml-3">
+                        <div class="ml-8 xl:ml-[70px]">
+                            <h3 class="text-xl xl:text-2xl font-bold">Шини</h3>
+                            <ul class="mt-1">
+                                <li class=""><a href=""
+                                        class="hover:font-semibold hover:text-yellow-400 duration-200 ">Літні</a></li>
+                                <li class=""><a href=""
+                                        class="hover:font-semibold hover:text-yellow-400 duration-200 ">Зимові</a></li>
+                                <li class=""><a href=""
+                                        class="hover:font-semibold hover:text-yellow-400 duration-200 ">Шиповані</a>
+                                </li>
+                                <li class=""><a href=""
+                                        class="hover:font-semibold hover:text-yellow-400 duration-200 ">Гладкі</a></li>
+                                <li class=""><a href=""
+                                        class="hover:font-bold hover:text-yellow-400 duration-200 text-sm font-semibold text-yellow-400">до
+                                        категорії</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- One category -->
+                <div class="relative bg-white w-full h-[226px] xl:h-[278px] overflow-hidden">
+
+                    <img src="./img/blue-circle.png" alt="yellow circle" class="absolute z-0 h-full -left-14">
+
+                    <div class="relative z-10 w-full h-full flex items-center">
+                        <img src="./img/tires.png" alt="tires" class="w-[130px] h-auto xl:w-[194px] ml-3">
+                        <div class="ml-8 xl:ml-[70px]">
+                            <h3 class="text-xl xl:text-2xl font-bold">Шини</h3>
+                            <ul class="mt-1">
+                                <li class=""><a href=""
+                                        class="hover:font-semibold hover:text-yellow-400 duration-200 ">Літні</a></li>
+                                <li class=""><a href=""
+                                        class="hover:font-semibold hover:text-yellow-400 duration-200 ">Зимові</a></li>
+                                <li class=""><a href=""
+                                        class="hover:font-semibold hover:text-yellow-400 duration-200 ">Шиповані</a>
+                                </li>
+                                <li class=""><a href=""
+                                        class="hover:font-semibold hover:text-yellow-400 duration-200 ">Гладкі</a></li>
+                                <li class=""><a href=""
+                                        class="hover:font-bold hover:text-yellow-400 duration-200 text-sm font-semibold text-yellow-400">до
+                                        категорії</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Catalog -->
+    <section class="bg-gray-100 pt-10">
+        <div class="container mx-auto px-6">
+
+            <!-- Title / Sorting -->
+            <div class="flex flex-col md:flex-row md:items-end lg:items-center justify-between">
+                <div class="">
+                    <h2 class="text-4xl font-bold">Каталог</h2>
+
+                    <!-- Filter btn -->
+                    <button
+                        class="flex lg:hidden items-center justify-center w-full md:w-[160px] h-[40px] bg-yellow-400 hover:bg-yellow-300 mt-[23px] font-bold ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="17" height="17" viewBox="0 0 17 17"
+                            fill="none">
+                            <path
+                                d="M1 2.66666H4.33333M16 2.66666H7.66667M1 8.49999H11M16 8.49999H14.3333M1 14.3333H2.66667M16 14.3333H6"
+                                stroke="black" stroke-width="2" stroke-linecap="round" />
+                            <path
+                                d="M6.00016 4.33333C6.92064 4.33333 7.66683 3.58714 7.66683 2.66667C7.66683 1.74619 6.92064 1 6.00016 1C5.07969 1 4.3335 1.74619 4.3335 2.66667C4.3335 3.58714 5.07969 4.33333 6.00016 4.33333Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" />
+                            <path
+                                d="M12.6667 10.1667C13.5871 10.1667 14.3333 9.42048 14.3333 8.50001C14.3333 7.57954 13.5871 6.83334 12.6667 6.83334C11.7462 6.83334 11 7.57954 11 8.50001C11 9.42048 11.7462 10.1667 12.6667 10.1667Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" />
+                            <path
+                                d="M4.33317 16C5.25365 16 5.99984 15.2538 5.99984 14.3333C5.99984 13.4128 5.25365 12.6667 4.33317 12.6667C3.4127 12.6667 2.6665 13.4128 2.6665 14.3333C2.6665 15.2538 3.4127 16 4.33317 16Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                        фільтри
+                    </button>
+
+                </div>
+
+                <div class="sm:ml-auto flex items-center space-x-5 mt-2">
+                    <p class="text-xl font-semibold">Сортування</p>
+                    <Select name="" id="" variant="standard"
+                        class="block  form-select w-64 h-10 bg-white border-2 border-gray-300 px-4 outline-none active:border-yellow-400">
+                        <option value="1">від дешевшого</option>
+                        <option value="2">від дорожчого</option>
+                        <option value="3">популряні</option>
+                        <option value="4">нові</option>
+                    </Select>
+                </div>
+            </div>
+
+            <!-- Filters / Carts -->
+            <div class="flex justify-between mt-5 ">
+
+                <!-- Filters -->
+                <div class="hidden lg:block space-y-[30px]">
+
+                    <!-- One filter -->
+                    <div class="">
+                        <h4 class="text-2xl font-semibold">Категорія</h4>
+                        <ul class="ml-[10px] mt-[13px] space-y-[7px]">
+                            <li class=""><a href="" class="font-bold text-yellow-400 duration-100">Аккумулятори</a></li>
+                            <li class=""><a href=""
+                                    class="hover:font-bold hover:text-yellow-400 duration-100">Електрика</a></li>
+                            <li class=""><a href="" class="hover:font-bold hover:text-yellow-400 duration-100">Шини</a>
+                            </li>
+                            <li class=""><a href="" class="hover:font-bold hover:text-yellow-400 duration-100">Кузовні
+                                    деталі</a></li>
+                            <li class=""><a href="" class="hover:font-bold hover:text-yellow-400 duration-100">Салон</a>
+                            </li>
+                            <li class=""><a href=""
+                                    class="hover:font-bold hover:text-yellow-400 duration-100 flex items-center text-gray-400">
+                                    Показати всі
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-1" width="20" height="20"
+                                        viewBox="0 0 20 20" fill="none">
+                                        <path d="M5 6L10 11L15 6L17 7L10 14L3 7L5 6Z" fill="currentColor" />
+                                    </svg>
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- One filter -->
+                    <div class="">
+                        <h4 class="text-2xl font-semibold">Ціна</h4>
+                        <!-- Price -->
+                        <form action="" class="ml-[10px] mt-[13px]">
+                            <div class="flex items-center space-x-[5px]">
+                                <div class="flex flex-col">
+                                    <label for="from">Від</label>
+                                    <input type="number" id="from" placeholder="0"
+                                        class="mt-2 w-[90px] h-10 bg-transparent outline-none text-center border-2 border-gray-300 focus:border-yellow-400">
+                                </div>
+                                <div class="w-5 h-0.5 bg-gray-300 mt-8"></div>
+                                <div class="flex flex-col">
+                                    <label for="from">До</label>
+                                    <input type="number" id="from" placeholder="100"
+                                        class="mt-2 w-[90px] h-10 bg-transparent outline-none text-center border-2 border-gray-300 focus:border-yellow-400">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- One filter -->
+                    <div class="">
+                        <h4 class="text-2xl font-semibold">Виробник</h4>
+                        <ul class="ml-[10px] mt-[13px] space-y-[7px]">
+                            <li class=""><a href=""
+                                    class="hover:font-bold hover:text-yellow-400 duration-100">Аккумулятори</a></li>
+                            <li class=""><a href=""
+                                    class="hover:font-bold hover:text-yellow-400 duration-100">Електрика</a></li>
+                            <!-- Active -->
+                            <li class=""><a href="" class="font-bold text-yellow-400 duration-100">Шини</a></li>
+                            <li class=""><a href="" class="hover:font-bold hover:text-yellow-400 duration-100">Кузовні
+                                    деталі</a></li>
+                            <li class=""><a href="" class="hover:font-bold hover:text-yellow-400 duration-100">Салон</a>
+                            </li>
+                            <li class=""><a href=""
+                                    class="hover:font-bold hover:text-yellow-400 duration-100 flex items-center text-gray-400">
+                                    Показати всі
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-1" width="20" height="20"
+                                        viewBox="0 0 20 20" fill="none">
+                                        <path d="M5 6L10 11L15 6L17 7L10 14L3 7L5 6Z" fill="currentColor" />
+                                    </svg>
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- One filter -->
+                    <div class="">
+                        <h4 class="text-2xl font-semibold">Країна</h4>
+                        <ul class="ml-[10px] mt-[13px] space-y-[7px]">
+                            <li class=""><a href=""
+                                    class="hover:font-bold hover:text-yellow-400 duration-100">Японія</a></li>
+                            <li class=""><a href="" class="hover:font-bold hover:text-yellow-400 duration-100">Китай</a>
+                            </li>
+                            <!-- Active -->
+                            <li class=""><a href="" class="font-bold text-yellow-400 duration-100">Німеччина</a></li>
+                            <li class=""><a href=""
+                                    class="hover:font-bold hover:text-yellow-400 duration-100">Україна</a></li>
+                            <li class=""><a href=""
+                                    class="hover:font-bold hover:text-yellow-400 duration-100">Польща</a></li>
+                            <li class=""><a href=""
+                                    class="hover:font-bold hover:text-yellow-400 duration-100 flex items-center text-gray-400">
+                                    Показати всі
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-1" width="20" height="20"
+                                        viewBox="0 0 20 20" fill="none">
+                                        <path d="M5 6L10 11L15 6L17 7L10 14L3 7L5 6Z" fill="currentColor" />
+                                    </svg>
+                                </a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="w-[260px] sm:w-auto mx-auto md:mx-0">
+                    <!-- Carts -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-0.5">
+
+                        <!-- One cart -->
+                        <div class="cart ">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів за допомогою склоомиваючого пристрою.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів за допомогою склоомиваючого пристрою.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів за допомогою склоомиваючого пристрою.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів за допомогою склоомиваючого пристрою.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів за допомогою склоомиваючого пристрою.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів за допомогою склоомиваючого пристрою.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів за допомогою склоомиваючого пристрою.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів за допомогою склоомиваючого пристрою.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів за допомогою склоомиваючого пристрою.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One cart -->
+                        <div class="cart">
+
+                            <!-- Cart img -->
+                            <div class="cart__img">
+                                <img src="./img/cart-img.png" alt="">
+                            </div>
+
+                            <!-- Cart desc -->
+                            <div class="px-4">
+                                <p class="cart__category">Догляд за авто</p>
+                                <p class="cart__name">Омивач скла</p>
+                                <p class="cart__desc">
+                                    Зимовий омивач скла VIRA (-22 ° С) Диня.Використовується для очищення скла
+                                    автомобілів за допомогою склоомиваючого пристрою.
+                                </p>
+
+                                <div class="cart__interact">
+                                    <div class="">
+                                        <s class="cart__oldPrice">112 ₴</s>
+                                        <p class="cart__price">95 ₴</p>
+                                    </div>
+                                    <button class="cart__btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="flex justify-center py-3 xl:py-6">
+                        <a href=""
+                            class="flex items-center text-lg xl:text-xl font-semibold text-yellow-400 bg-gray-100 rounded-md hover:shadow-2xl px-4 py-2 duration-200 hover:bg-white active:bg-yellow-300 active:text-black-200 animate active:shadow-none active:scale-95">
+                            Показати більше
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 animate animate-spin" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M12 4.74998C10.53 4.75004 9.09481 5.19692 7.88467 6.03135C6.67452 6.86579 5.74661 8.04837 5.22398 9.42226C4.70134 10.7962 4.60868 12.2965 4.95827 13.7242C5.30787 15.152 6.0832 16.4398 7.18147 17.4168C8.27973 18.3938 9.64903 19.0139 11.1078 19.1948C12.5666 19.3758 14.0459 19.109 15.3496 18.43C16.6532 17.7509 17.7197 16.6916 18.4075 15.3925C19.0954 14.0934 19.3721 12.6159 19.201 11.156C19.133 10.568 19.56 9.99998 20.151 9.99998C20.666 9.99998 21.119 10.358 21.181 10.87C21.4427 12.9971 20.9578 15.1491 19.809 16.9583C18.6602 18.7675 16.9187 20.1217 14.8823 20.7894C12.8458 21.4572 10.6407 21.3971 8.64361 20.6194C6.64655 19.8417 4.9815 18.3946 3.93295 16.5255C2.88439 14.6564 2.51741 12.4812 2.89469 10.3715C3.27197 8.26183 4.3701 6.34862 6.00147 4.95876C7.63284 3.5689 9.6962 2.78863 11.839 2.75128C13.9818 2.71393 16.0711 3.42181 17.75 4.75398V4.24998C17.75 3.98463 17.8554 3.73015 18.043 3.54252C18.2306 3.35489 18.4851 3.24948 18.7505 3.24948C19.0158 3.24948 19.2703 3.35489 19.4579 3.54252C19.6455 3.73015 19.751 3.98463 19.751 4.24998V6.94798C19.762 6.96527 19.773 6.98261 19.784 6.99998H19.75V7.24998C19.75 7.51519 19.6446 7.76955 19.4571 7.95708C19.2695 8.14462 19.0152 8.24998 18.75 8.24998H15.75C15.4847 8.24998 15.2304 8.14462 15.0429 7.95708C14.8553 7.76955 14.75 7.51519 14.75 7.24998C14.75 6.98476 14.8553 6.73041 15.0429 6.54287C15.2304 6.35533 15.4847 6.24998 15.75 6.24998H16.416C15.1505 5.27516 13.5974 4.74762 12 4.74998V4.74998Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black-200 pt-5 xl:pt-[55px] pb-4">
+        <div class="container mx-auto px-6">
+            <div class="xl:flex">
+
+                <div class="">
+                    <h2 class="text-2xl 2xl:text-4xl text-white font-bold text-center">Zapchasti.group</h2>
+                    <div class="hidden xl:block xl:mt-[152px] 2xl:mt-[241px]">
+                        <p class="text-sm text-white ">© 2011 - 2022</p>
+                        <p class="text-sm text-white">Всі права збережено</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row items-baseline justify-between xl:ml-auto 2xl:ml-28 space-y-5 lg:space-y-0 xl:space-x-[60px] 2xl:space-x-[123px] mt-5 xl:mt-0">
+
+                    <!-- Links -->
+                    <div class="xl:mt-0 2xl:mt-4">
+                        <h5 class="text-xl text-white font-bold">Посилання</h5>
+                        <ul class="text-gray-400 mt-5 space-y-[15px]">
+                            <li class=""><a href="#" class="hover:text-white">Головна</a></li>
+                            <li class=""><a href="#" class="hover:text-white">Каталог</a></li>
+                            <li class=""><a href="#" class="hover:text-white">Блог</a></li>
+                            <li class=""><a href="#" class="hover:text-white">Контакти</a></li>
+                            <li class=""><a href="#" class="hover:text-white">Про нас</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contacts -->
+                    <div class="xl:mt-0 2xl:mt-4">
+                        <h5 class="text-xl text-white font-bold">Контакти</h5>
+
+                        <!-- Phone -->
+                        <div class="flex items-center mt-5">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <path
+                                        d="M13.7047 3.72969L12.0406 2.06719C11.8375 1.86406 11.5656 1.75 11.2781 1.75C10.9906 1.75 10.7188 1.8625 10.5156 2.06719L8.72344 3.85625C8.52031 4.05938 8.40625 4.33281 8.40625 4.62031C8.40625 4.90938 8.51875 5.17969 8.72344 5.38438L10.1234 6.78594C9.80451 7.52904 9.34626 8.20421 8.77344 8.775C8.2 9.35156 7.52969 9.80625 6.78594 10.1281L5.38594 8.72656C5.18281 8.52344 4.91094 8.40938 4.62344 8.40938C4.48163 8.40885 4.34114 8.43663 4.21021 8.4911C4.07928 8.54557 3.96054 8.62562 3.86094 8.72656L2.06719 10.5156C1.86406 10.7188 1.75 10.9922 1.75 11.2797C1.75 11.5688 1.8625 11.8391 2.06719 12.0437L3.72969 13.7063C4.07656 14.0531 4.55469 14.2516 5.04531 14.2516C5.14687 14.2516 5.24531 14.2437 5.34531 14.2266C7.41406 13.8859 9.46719 12.7844 11.125 11.1281C12.7812 9.46875 13.8813 7.41563 14.225 5.34531C14.3234 4.75781 14.1266 4.15313 13.7047 3.72969ZM13.1172 5.15938C12.8125 7.00156 11.8219 8.83906 10.3297 10.3313C8.8375 11.8234 7.00156 12.8141 5.15938 13.1187C4.92813 13.1578 4.69062 13.0797 4.52187 12.9125L2.88906 11.2797L4.62031 9.54688L6.49219 11.4219L6.50625 11.4359L6.84375 11.3109C7.86707 10.9347 8.79635 10.3404 9.56717 9.56934C10.338 8.79825 10.9319 7.86877 11.3078 6.84531L11.4328 6.50781L9.54531 4.62187L11.2766 2.88906L12.9094 4.52187C13.0781 4.69062 13.1562 4.92813 13.1172 5.15938Z"
+                                        fill="#9B9B9B" />
+                                </svg>
+                            </div>
+                            <div class="ml-4 text-gray-400">
+                                <a href="tel:+38 (066) 170 459" class="hover:text-white">+38 (066) 170 459</a> <br>
+                                <a href="tel:+38 (066) 170 459" class="hover:text-white">+38 (066) 170 459</a>
+                            </div>
+                        </div>
+
+                        <!-- Mail -->
+                        <div class="flex items-center mt-5">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_133_2233)">
+                                        <path
+                                            d="M7.72402 3.51042C8.94552 3.51042 10.0965 4.05192 10.94 4.89842V4.90092C10.94 4.49442 11.2135 4.18692 11.5915 4.18692H11.6875C12.284 4.18692 12.4035 4.74942 12.4035 4.92692L12.406 11.2444C12.3645 11.6584 12.8335 11.8724 13.094 11.6064C14.1065 10.5649 15.32 6.24692 12.4635 3.74692C9.79952 1.41342 6.22402 1.79892 4.32302 3.10892C2.30252 4.50492 1.01102 7.58842 2.26552 10.4864C3.63552 13.6459 7.55202 14.5884 9.88302 13.6484C11.063 13.1719 11.607 14.7649 10.3805 15.2864C8.53202 16.0749 3.38052 15.9944 0.974523 11.8279C-0.650977 9.01342 -0.564977 4.06242 3.74802 1.49742C7.04452 -0.466078 11.394 0.0779221 14.016 2.81542C16.756 5.67992 16.5975 11.0394 13.9225 13.1229C12.711 14.0704 10.912 13.1489 10.925 11.7684L10.9115 11.3184C10.068 12.1539 8.94552 12.6439 7.72402 12.6439C5.30752 12.6439 3.18002 10.5159 3.18002 8.10192C3.18002 5.66192 5.30752 3.51142 7.72402 3.51142V3.51042ZM10.7635 7.92742C10.672 6.15892 9.35952 5.09392 7.77352 5.09392H7.71352C5.88552 5.09392 4.87002 6.53392 4.87002 8.16642C4.87002 9.99692 6.09652 11.1529 7.70602 11.1529C9.50252 11.1529 10.682 9.83842 10.768 8.28342L10.7635 7.92742Z"
+                                            fill="#9B9B9B" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_133_2233">
+                                            <rect width="16" height="16" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="ml-4 text-gray-400">
+                                <a href="#" class="hover:text-white">robocha.pochta@gmail.com</a> <br>
+                                <a href="#" class="hover:text-white">robocha.pochta@outlook.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Street -->
+                        <div class="flex items-center mt-5">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <path
+                                        d="M8.00008 7.99992C7.26675 7.99992 6.66675 7.39992 6.66675 6.66658C6.66675 5.93325 7.26675 5.33325 8.00008 5.33325C8.73342 5.33325 9.33342 5.93325 9.33342 6.66658C9.33342 7.39992 8.73342 7.99992 8.00008 7.99992ZM12.0001 6.79992C12.0001 4.37992 10.2334 2.66659 8.00008 2.66659C5.76675 2.66659 4.00008 4.37992 4.00008 6.79992C4.00008 8.35992 5.30008 10.4266 8.00008 12.8933C10.7001 10.4266 12.0001 8.35992 12.0001 6.79992ZM8.00008 1.33325C10.8001 1.33325 13.3334 3.47992 13.3334 6.79992C13.3334 9.01325 11.5534 11.6333 8.00008 14.6666C4.44675 11.6333 2.66675 9.01325 2.66675 6.79992C2.66675 3.47992 5.20008 1.33325 8.00008 1.33325Z"
+                                        fill="#9B9B9B" />
+                                </svg>
+                            </div>
+                            <div class="ml-4 text-gray-400">
+                                <a href="tel:+38 (066) 170 459" class="hover:text-white">м.Луцьк вул. Ковельська
+                                    29</a>
+                                <br>
+                                <a href="tel:+38 (066) 170 459" class="hover:text-white">м.Луцьк p-к “Формула”
+                                    контейнер
+                                    62</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Place -->
+                    <div class="xl:mt-0 2xl:mt-4 w-full lg:w-auto">
+                        <h5 class="text-xl text-white font-bold">Ми на карті</h5>
+
+                        <!-- Place for map -->
+                        <div
+                            class="flex items-center mt-5 w-full h-[400px] lg:w-[271px] xl:w-[302px] 2xl:w-[442px] lg:h-[147px] xl:h-[164px] 2xl:h-[241px] bg-white">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="flex xl:hidden items-end justify-between mt-4">
+                    <div class="">
+                        <p class="text-sm text-white ">© 2011 - 2022</p>
+                        <p class="text-sm text-white">Всі права збережено</p>
+                    </div>
+                    <p class="text-white font-semibold">Розробка сайтів <a href="https://xion.pro"
+                            class="text-yellow-400">xion.pro</a></p>
+                </div>
+            </div>
+            <p class="hidden xl:block text-white font-semibold text-center mt-3">
+                Розробка сайтів <a href="https://xion.pro" class="text-yellow-400">xion.pro</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js">
+    </script>
+
+</body>
+
+</html>
