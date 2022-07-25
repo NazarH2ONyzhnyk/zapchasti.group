@@ -8,4 +8,5 @@ function desc() {
 }
 function add() {
     count.value ++
+    console.log('adding')
 }

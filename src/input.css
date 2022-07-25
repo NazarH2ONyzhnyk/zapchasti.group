@@ -91,4 +91,7 @@
     .basket__product__price {
         @apply text-2xl font-medium inline;
     }
+    .basket__input {
+        @apply w-full h-10 pl-3 outline-none rounded-none border-b-2 border-gray-300 focus:border-yellow-300;
+    }
 }
