@@ -14,9 +14,9 @@
 
     
     <!-- Order -->
-    <div class="z-40 absolute top-0 left-0 w-full h-screen bg-white bg-opacity-50 ">
+    <div class="z-40 absolute top-0 left-0 w-full h-screen bg-white bg-opacity-50 overflow-y-scroll lg:overflow-auto">
         <div class="w-full h-full flex items-center justify-center">
-            <div class="bg-white p-8 shadow-2xl">
+            <div class="bg-white p-4 lg:p-8 shadow-2xl ">
 
                 <div class="flex items-center justify-between border-b-2 border-gray-200 pb-6 w-auto">
                     <!-- Треба щоб переломлення <br> відображалося коли користувач зареєстрований, і не відображалось коли не зареєестрований -->
@@ -28,10 +28,10 @@
                     </button>
                 </div>
 
-                <div class="flex justify-between mt-6 space-x-16">
+                <div class="relative flex flex-col lg:flex-row space-y-4 items-center lg:items-start justify-between mt-6 lg:space-x-16">
 
                     <!-- Якщо користувач не зареєстрований -->
-                    <form action="" class="relative space-y-6">
+                    <form action="" class="space-y-6">
                         <div class="space-x-2">
                             <p class="font-medium">Введіть ваше ім’я</p>
                             <input class="basket__input" type="text" placeholder="Ім’я">
@@ -40,17 +40,20 @@
                             <p class="font-medium">Введіть ваш номер телефону</p>
                             <input class="basket__input" type="text" placeholder="Номер телефону">
                         </div>
+                        <div class="">
+                            <label for="want-register" class="px-2 py-1 flex items-center select-none cursor-pointer hover:bg-yellow-400 hover:bg-opacity-30"><input type="checkbox" name="" id="want-register" class="mr-2 w-4 h-4 cursor-pointer">Зареєструвати мене після покупки</label>
+                        </div>
                         <!-- Error -->
-                        <div class="space-x-2">
+                        <!-- <div class="space-x-2">
                             <p class="font-medium">Введіть ваше ім’я</p>
                             <input class="basket__input border-red-400 placeholder:text-red-400" type="text" placeholder="Ім’я">
-                        </div>
+                        </div> -->
                         <!-- Error -->
-                        <div class="space-x-2">
+                        <!-- <div class="space-x-2">
                             <p class="font-medium">Введіть ваш номер телефону</p>
                             <input class="basket__input border-red-400 placeholder:text-red-400" type="text" placeholder="Номер телефону">
-                        </div>
-                        <button class="absolute bottom-0 px-6 py-2 font-semibold border-2 border-blue-500 bg-blue-200 text-blue-500 hover:bg-blue-500 hover:text-white duration-100 shadow-lg  hover:shadow-blue-400 active:shadow-none active:scale-95">Повернутися в корзину</button>
+                        </div> -->
+                        <button class="lg:absolute bottom-0 w-full lg:w-auto px-6 py-2 font-semibold border-2 border-blue-500 bg-blue-200 text-blue-500 hover:bg-blue-500 hover:text-white duration-100 shadow-lg  hover:shadow-blue-400 active:shadow-none active:scale-95">Повернутися в корзину</button>
                     </form>
 
                     <div class="bg-gray-100 px-6 py-5 w-[364px]">
@@ -72,13 +75,23 @@
                                 <p class="text-center font-semibold">Назар Нижник</p>
                             </div>
 
+                            <div class="flex justify-between items-baseline mt-1">
+                                <p class="text-sm w-1/2">Поставник</p>
+                                <p class="text-right font-semibold">Zapchasti.group</p>
+                            </div>
+
+                            <div class="flex justify-between items-baseline mt-1">
+                                <p class="text-sm w-1/2">Омивач скла Vira sens (1шт)</p>
+                                <p class="font-semibold">200грн</p>
+                            </div>
+
                             <div class="flex justify-between">
-                                <p class="text-sm">5 товарів на суму</p>
+                                <p class="text-sm w-1/2">5 товарів на суму</p>
                                 <p class="font-semibold">1736грн</p>
                             </div>
 
                             <div class="flex justify-between">
-                                <p class="text-sm">Доставка</p>
+                                <p class="text-sm w-1/2">Доставка</p>
                                 <p class="font-semibold">125грн</p>
                             </div>
                         </div>
