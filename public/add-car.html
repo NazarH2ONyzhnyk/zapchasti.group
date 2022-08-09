@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add car</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="fixed top-0 left-0 w-full h-full py-10 px-4 bg-red-200 overflow-y-auto">
+
+        <div class="w-full lg:w-[1050px] mx-auto rounded-[10px] h-auto bg-white overflow-hidden">
+
+            <div class="h-[67px] bg-blue-800 px-[30px] flex justify-between items-center text-white overflow-y-auto">
+                <h3 class="text-base font-semibold">Додати авто</h3>
+                <button class="btn__blackwhite__sqr hover:text-red-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15.59 7L12 10.59L8.41 7L7 8.41L10.59 12L7 15.59L8.41 17L12 13.41L15.59 17L17 15.59L13.41 12L17 8.41L15.59 7Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="p-[25px]">
+
+                <div class="">
+                    <p class="text-base font-semibold">Номерний знак</p>
+                    <input type="text" class="form__input md:w-64" placeholder="XX XXXX XX">
+                </div>
+
+                <div class="grid lg:grid-cols-4 mt-[25px] gap-[25px]">
+
+                    <div class="">
+                        <p class="text-base font-semibold">Тип авто</p>
+                        <select name="" id="" class="form__input ">
+                            <option value="">Легковий</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <p class="text-base font-semibold">Кузов</p>
+                        <select name="" id="" class="form__input ">
+                            <option value="">Седан</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <p class="text-base font-semibold">Марка</p>
+                        <select name="" id="" class="form__input ">
+                            <option value="">Ваз</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <p class="text-base font-semibold">Модель</p>
+                        <select name="" id="" class="form__input ">
+                            <option value="">21063</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <p class="text-base font-semibold">Рік випуску</p>
+                        <select name="" id="" class="form__input ">
+                            <option value="">1985</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <p class="text-base font-semibold">Двигун</p>
+                        <select name="" id="" class="form__input ">
+                            <option value="">Бензин</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <p class="text-base font-semibold">Об’єм двигуна</p>
+                        <select name="" id="" class="form__input ">
+                            <option value="">1.3</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                        </select>
+                    </div>
+
+                    <div class="col-span-2">
+                        <p class="text-base font-semibold">Трансмісія</p>
+                        <!-- <div class="flex mt-2">
+                            <label for="mechanik" class="w-full border-2 flex items-center justify-center border-r-0 h-[50px] focus:bg-blue-800 rounded-l-md bg-red-400">
+                                <input type="radio" name="transmission" id="mechanik" class="checked:bg-red-400" checked>
+                                Механіка
+                            </label>
+                            <div class="h-[50px] w-1 bg-blue-800"></div>
+                            <label for="automat" class="w-full border-2 flex items-center justify-center border-l-0 h-[50px] focus:bg-blue-800 rounded-r-md">
+                                <input type="radio" name="transmission" id="automat" class="">
+                                Автомат
+                            </label>
+                        </div> -->
+                        <div class="flex mt-2">
+                            <button class="rounded-l-md form__radio form__radio__selected">Механіка</button>
+                            <button class="rounded-r-md form__radio">Автомат</button>
+                        </div>
+                    </div>
+                    <div class="col-span-2">
+                        <p class="text-base font-semibold">Привід</p>
+
+                        <div class="flex mt-2">
+                            <button class="rounded-l-md form__radio form__radio__selected">Передній</button>
+                            <button class="form__radio">Задній</button>
+                            <button class="rounded-r-md form__radio">Повний</button>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="flex items-center mt-5">
+                    <button class="form__add">
+                        <div class="w-full h-full flex items-center justify-center">
+                            Додати авто
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+            
+
+        </div>
+        
+    </div>
+</body>
+</html>
