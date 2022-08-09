@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapchasti.group</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <div class="w-full h-screen bg-gray-200 flex items-center justify-center">
+
+        <div class="w-[800px] min-h-[480px] bg-white shadow-2xl pb-20">
+            <div class="login__switch__bg">
+                <!-- <div class="login__switcher login__switcher__left" id="switcher"></div> -->
+                <button id="signin" onclick="signIn()" class="login__switch login__switch__active">
+                    Авторизація
+                </button>
+                <div class="w-0.5 bg-yellow-400"></div>
+                <button id="signup" onclick="signUp()" class="login__switch login__switch__disabled">
+                    Реєстрація
+                </button>
+            </div>
+            <form action="" class="w-[400px] mx-auto mt-14 block" id="loginForm">
+                <div class="mt-4">
+                    <p class="font-medium">Номер телефону</p>
+                    <input type="text" placeholder="+380xxxxxxxxx" class="login__input">
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Пароль</p>
+                    <input type="password" placeholder="********" class="login__input">
+                </div>
+                <div class="mt-4">
+                    <label for="remeberme" class="flex items-center cursor-pointer select-none hover:bg-yellow-400 hover:bg-opacity-30 p-1 "><input type="checkbox" name="remeberme" id="remeberme" class="w-4 h-4 mr-2"> Запам'ятати мене</label>
+                </div>
+                <button class="w-full h-10 mt-10 bg-yellow-400 font-semibold hover:bg-yellow-300 hover:-translate-y-1 active:translate-y-0 duration-200">Увійти</button>
+            </form>
+            <form action="" class="w-[400px] mx-auto mt-14 hidden" id="registerForm">
+                <div class="p-2 bg-blue-300">
+                    <p class="text-sm text-blue-900 font-semibold">Якесь повідомлення без тексту</p>
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Прізвище, імя</p>
+                    <input type="text" placeholder="Прізвище, імя" class="login__input">
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Номер телефону</p>
+                    <input type="text" placeholder="+380xxxxxxxxx" class="login__input">
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Пароль</p>
+                    <input type="password" placeholder="********" class="login__input">
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Повторіть пароль</p>
+                    <input type="password" placeholder="********" class="login__input">
+                </div>
+                <button class="w-full h-10 mt-10 bg-yellow-400 font-semibold hover:bg-yellow-300 hover:-translate-y-1 active:translate-y-0 duration-200">Зареєструватись</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="./js/main.js">
+    </script>
+</body>
+
+</html>
