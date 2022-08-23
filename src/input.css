@@ -401,4 +401,14 @@
     .requers__cart__canceled {
         @apply min-w-[150px] md:min-w-0 w-full h-10 flex items-center justify-center bg-gradient-to-r from-red-600 to-red-500 rounded-md;
     }
+    .section__search {
+        @apply  px-[25px] h-[60px] w-full text-lg outline-none rounded-l-[10px] border-2 border-white focus:border-blue-800
+    }
+    .section__searchBtn {
+        @apply -ml-4 text-lg font-semibold lightblue-gradient h-full rounded-[10px] text-blue-800 hover:bg-gradient-to-r hover:from-blue-800 hover:to-blue-800 duration-200;
+    }
+    .section__searchBtn div{
+        @apply px-[25px] h-[60px] hover:lightblue-text-gradient duration-200 flex items-center justify-center
+
+    }
 }

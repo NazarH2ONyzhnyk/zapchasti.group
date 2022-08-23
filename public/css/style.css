@@ -1880,6 +1880,65 @@ p,
   }
 }
 
+.section__search{
+  height: 60px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.section__search:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(41 60 82 / var(--tw-border-opacity));
+}
+
+.section__searchBtn {
+  background: linear-gradient(90deg, #A0CCFF 0%, #7CB8FF 100%);
+  margin-left: -1rem;
+  height: 100%;
+  border-radius: 10px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(41 60 82 / var(--tw-text-opacity));
+  transition-duration: 200ms;
+}
+
+.section__searchBtn:hover{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #293C52;
+  --tw-gradient-to: rgb(41 60 82 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #293C52;
+}
+
+.section__searchBtn div{
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  transition-duration: 200ms;
+}
+
+.section__searchBtn div:hover {
+  background: linear-gradient(90deg, #A0CCFF 0%, #7CB8FF 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -2159,6 +2218,10 @@ p,
 
 .ml-2{
   margin-left: 0.5rem;
+}
+
+.ml-10{
+  margin-left: 2.5rem;
 }
 
 .ml-4{
@@ -2707,6 +2770,12 @@ p,
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden{
@@ -3367,6 +3436,10 @@ p,
 
   .md\:ml-2{
     margin-left: 0.5rem;
+  }
+
+  .md\:ml-10{
+    margin-left: 2.5rem;
   }
 
   .md\:inline{
