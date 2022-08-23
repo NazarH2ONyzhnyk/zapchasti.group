@@ -132,6 +132,8 @@
         @apply w-full h-10 pl-3 outline-none rounded-none border-b-2 border-gray-300 focus:border-yellow-300;
     }
 
+    /* added for Login page */
+
     .login__switch__bg {
         @apply flex relative;
     }
@@ -150,6 +152,9 @@
 
     .login__input {
         @apply w-full h-10 border-b-2 border-gray-300 outline-none pl-4 mt-1 focus:border-yellow-400 hover:bg-yellow-400 hover:bg-opacity-20 hover:border-yellow-400 focus:bg-yellow-400 focus:bg-opacity-30;
+    }
+    .login__input__error {
+        @apply w-full h-10 border-b-2 border-red-500 outline-none pl-4 mt-1 bg-red-100 placeholder-red-500 text-red-500;
     }
 
     /* added for Admin panel */

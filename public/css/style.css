@@ -907,6 +907,8 @@ p,
   border-color: rgb(254 191 45 / var(--tw-border-opacity));
 }
 
+/* added for Login page */
+
 .login__switch__bg{
   position: relative;
   display: flex;
@@ -967,6 +969,35 @@ p,
   border-color: rgb(253 184 25 / var(--tw-border-opacity));
   background-color: rgb(253 184 25 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.3;
+}
+
+.login__input__error{
+  margin-top: 0.25rem;
+  height: 2.5rem;
+  width: 100%;
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.login__input__error::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-placeholder-opacity));
+}
+
+.login__input__error::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-placeholder-opacity));
+}
+
+.login__input__error{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 /* added for Admin panel */
