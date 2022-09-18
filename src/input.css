@@ -474,7 +474,7 @@
         @apply w-1/5
     }
     .basket__counter {
-        @apply w-1/5 tetx-center
+        @apply w-1/5
     }
     .basket__count {
         @apply flex pr-2 gap-x-2 w-1/5
