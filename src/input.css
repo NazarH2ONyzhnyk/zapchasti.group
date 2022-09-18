@@ -14,6 +14,7 @@
     h5,
     h6,
     button,
+    input,
     a {
         font-family: 'Montserrat', sans-serif;
     }
@@ -410,5 +411,75 @@
     .section__searchBtn div{
         @apply px-[25px] h-[60px] hover:lightblue-text-gradient duration-200 flex items-center justify-center
 
+    }
+
+    .island {
+        @apply relative w-full bg-white h-[350px] rounded-[10px] p-5;
+    }
+    .island__scroll {
+        @apply mt-3 space-y-[10px] h-[258px] pb-5 pr-5 overflow-y-auto;
+    }
+    .island__empty {
+        @apply flex w-full h-full justify-center items-center;
+    }
+    .island__empty p{
+        @apply text-center text-sm font-semibold text-gray-400;
+    }
+    .parts__names {
+        @apply flex pl-[10px] mt-3
+    }
+    .parts__names h5 {
+        @apply text-sm font-bold w-1/3 text-gray-400
+    }
+    .storage__names {
+        @apply flex pl-[10px] mt-3
+    }
+    .storage__names h5 {
+        @apply text-sm font-bold text-gray-400
+    }
+    .storage__name {
+        @apply w-1/4 font-medium
+    }
+    .storage__remainder {
+        @apply w-1/4 pl-4 xl:pl-2 font-medium
+    }
+    .storage__price {
+        @apply w-1/4 pl-4 font-medium
+    } 
+    .catalog__part {
+        @apply flex items-center pl-[10px] relative rounded-[5px] hover:bg-yellow-200 hover:bg-opacity-50 duration-100 gap-x-1
+    }
+    .part__article {
+        @apply w-1/3 font-medium text-sm 2xl:text-base
+    }
+    .part__brand {
+        @apply w-1/3 font-medium text-sm 2xl:text-base pl-3
+    }
+    .catalog__btn {
+        @apply  ml-auto px-2 xl:px-5 2xl:px-[25px] py-[10px] bg-yellow-300 hover:bg-yellow-400 rounded-[5px] hover:cursor-pointer text-sm 2xl:text-base font-medium
+    }
+    .basket__names {
+        @apply flex
+    }
+    .basket__names h5 {
+        @apply mt-3 text-sm font-bold text-gray-400  pr-5
+    }
+    .basket__article {
+        @apply w-1/5
+    }
+    .basket__brand {
+        @apply w-1/5
+    }
+    .basket__price {
+        @apply w-1/5
+    }
+    .basket__counter {
+        @apply w-1/5 tetx-center
+    }
+    .basket__count {
+        @apply flex pr-2 gap-x-2 w-1/5
+    }
+    .basket__btn {
+        @apply w-10 h-10 bg-yellow-400 rounded-[5px] font-bold
     }
 }
